@@ -1,143 +1,149 @@
-# Awesome-E-Commerce-Integration-Middleware
-
-# Awesome-E-Commerce-Integration-Middleware
-
-**Top E Commerce Integration Middleware (Opensource) 🌟 Star if you like it! 🌟**
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Order Sync, Inventory Middleware, Connector Marketplaces & Self-Hosted Commerce Bridges*
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **E-Commerce Integration Middleware**. These tools enable retailers to connect storefronts, ERPs, 3PLs, and marketplaces—syncing orders, inventory, and fulfillment data without manual work—from fully managed iPaaS platforms with pre-built connectors to open-source modules that give developers control over their commerce data flows.
-
-
-
-**Examples** include Celigo, Patchworks, CartRover (Extensiv), Boomi, Workato, Alloy Automation, VL OMNI, Zapier, Make, and HubSpot E-commerce Integration (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted e-commerce integration, connector development, and open middleware infrastructure. **Critical note**: True open-source e-commerce middleware is rare—**Odoo's Shopify Connector** is the most production-ready open-source integration for a specific stack, while **Vendure's PunchOut plugin** adds B2B procurement connectivity . General-purpose open-source iPaaS tools like **n8n** and **Activepieces** can build commerce integrations but lack pre-built e-commerce connectors. No open-source project matches Celigo's NetSuite-native depth or Patchworks' multi-channel retail focus.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
-
-The global Integration Platform as a Service (iPaaS) and e-commerce middleware market is estimated at approximately **$15B to $19B in 2025–2026**, expanding rapidly at a ~20–24% CAGR driven by omnichannel commerce, headless architectures, and automated ERP/supply-chain syncs. The sector is **moderately fragmented** rather than winner-take-all: large enterprise platforms (HubSpot, Boomi, Workato) dominate horizontal workflows, while specialized, high-retention vertical middleware (such as Celigo for NetSuite, Patchworks for DTC multi-channel, and CartRover/Extensiv for WMS/3PL routing) thrive alongside niche and stack-specific solutions.
-
-## SaaS/Hosted Platforms
-
-| Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Free Trial Limits | Best For & Trade-offs |
-| :--- | :--- | :--- | :--- | :--- |
-| **HubSpot E-commerce Integration** | **~$12.5B Market Cap** (~$3.1B+ ARR) | Free tier available; paid Starter starts at **$15/seat/month**, Professional Commerce features start at **$85–$95/user/month** (billed annually) + transaction processing fees | **Free forever plan**: Up to 2 users, basic payment links, quotes, and standard CRM/e-commerce sync | **Best for**: HubSpot CRM users needing direct order sync to contact records.<br>**Trade-off**: Not dedicated middleware; limited ERP/WMS connectivity. |
-| **Workato** | **$5.7B Valuation** (~$150M ARR) | Starts at **$75/month** (Base plan with 2,500 recurring credits/month, scaling to $1,275/mo for 50,000 credits; custom enterprise quotes for higher volumes) | **Free forever plan**: **50,000 one-time credits** (never expire) for testing workflows and building automations | **Best for**: Teams automating across enterprise apps with no-code builder.<br>**Trade-off**: Credit consumption spans tasks, API calls, and table rows; unused paid credits expire monthly (no rollover). |
-| **Zapier** | **$5.0B Valuation** (~$310M+ ARR) | Free tier available; paid Starter tier starts at **$19.99/month** (billed annually at $239.88/yr for 750 tasks/mo; or $29.99 billed monthly) | **Free forever plan**: **100 tasks/month**, unlimited 2-step Zaps, and 15-minute polling updates | **Best for**: Small retailers wanting fast, simple order-to-app syncs.<br>**Trade-off**: Multi-step logic, webhooks, and fast polling (1–2 min) require paid tiers. |
-| **Boomi** | **$4.0B Valuation** (~$500M+ ARR) | Benchmark contracts typically start at **~$2,000–$3,750/month** (typical mid-market/enterprise entry is **~$45,000/year** based on deployed atoms and connector endpoints) | **Free trial only**: **30-day free trial** with full platform access across test atoms and connector libraries | **Best for**: Large enterprises requiring robust high-availability hybrid integration.<br>**Trade-off**: Quote-based contracts; add-on atoms and professional services add 20–40% to first-year TCO. |
-| **Celigo** | **~$100M ARR** (Series C funded) | Benchmark starting entry begins at **~$500–$600/month** (billed annually, structured by connected application endpoints and active flows) | **Free forever plan**: **2 endpoints and 1 active flow** in production; also provides a **30-day free trial** with unlimited endpoints/flows and 3 sandbox environments | **Best for**: NetSuite-centric retailers needing pre-built Shopify, Amazon, and EDI synchronization.<br>**Trade-off**: Free forever plan is limited to 1 flow; production multi-flow sync requires enterprise quotes. |
-| **Make (Celonis)** | **~$100M+ Subsidiary** (Celonis ~$11B valuation; ~$50M+ ARR) | Free tier available; paid Core tier starts at **$9/month** ($10.59 billed monthly) for 10,000 operations/month | **Free forever plan**: **1,000 operations/month**, 2 active scenarios, and 15-minute minimum execution intervals | **Best for**: Visual builders seeking complex branching logic at lower cost than Zapier.<br>**Trade-off**: Credit/operation exhaustion halts active sync scenarios until monthly reset. |
-| **CartRover (Extensiv)** | **~$18.5M ARR** (Private equity backed) | Merchant plan starts at **$39/month** (covers 1 cart/store connection + 1 WMS/3PL connection; $15/month per additional standard cart, $99/mo per EDI cart) | **Free trial only**: **30-day free trial** with unlimited order routing and warehouse sync testing (no credit card required) | **Best for**: Direct-to-consumer merchants routing order pipelines to 3PL warehouses.<br>**Trade-off**: Additional connector fees ($15/cart, $99/EDI) add up for multi-channel stores. |
-| **Patchworks** | **~$10M–$11.7M ARR** (£5M+ growth funded) | Entry Growth tier starts at **~$500–$1,000/month** (typically contracted annually from **~$6,000–$12,000/year** based on 3 connectors and up to 150,000 monthly operations) | **Free trial only**: **14 to 30-day guided sandbox trial** with free installation and onboarding consultation | **Best for**: Fast-growing apparel and retail DTC brands with multi-channel ERP/WMS setups.<br>**Trade-off**: Operations counted per payload; custom quote required for high volume. |
-| **Alloy Automation** | **~$100M–$250M Valuation** (~$5M ARR) | Embedded iPaaS starts at **$120/month** (starter tier on software marketplaces; enterprise embedded tiers start at $500–$1,000+/mo) | **Free trial only**: **14-day free trial** with access to pre-built e-commerce workflow recipes and connectors | **Best for**: SaaS software vendors building native embedded e-commerce integrations.<br>**Trade-off**: Niche focus on embedded SaaS integrations rather than merchant-direct ops. |
-| **VL OMNI** | **~$5.1M ARR** (Private boutique iPaaS) | Managed enterprise integration packages start at **~$1,500–$2,500/month** (+ initial implementation/setup fees depending on custom data flow mapping) | **Free trial only**: Custom scoped proof-of-concept / demo sandbox (typically **14–30 days** on inquiry) | **Best for**: Mid-market merchants needing fully managed Shopify Plus to complex ERP (NetSuite, MS Dynamics, SAP) integration.<br>**Trade-off**: High-touch managed service with setup costs; no self-serve sign-up. |
-
-
-## Open-Source GitHub Projects
-
-
-
-- **Odoo Shopify Connector**
-
-  **Production-ready Shopify-to-Odoo integration** (AGPL-3.0, OCA-maintained) — **the most complete open-source e-commerce middleware for a specific stack**, syncing products, inventory, customers, orders, returns, refunds, and fulfillment through the GraphQL Admin API . **Features**: **Signed webhooks** for fast path event handling; **OCA queue_job** for durable execution with retry; **scheduled reconciliation** repairs missed or delayed events; **onboarding, health checks, sync dashboard, error recovery, and configurable retention** for day-to-day operations . **Tech stack**: Python (Odoo 19). **Deploy**: Self-hosted (Odoo addon path + queue_job). **Trade-off**: **Odoo-specific**—not a general middleware; requires Odoo 19 Community and Shopify custom app setup . **Best for**: retailers running Odoo ERP wanting reliable Shopify sync without a commercial middleware subscription—especially those already on Odoo.
-
-
-
-- **Vendure PunchOut Gateway Plugin**
-
-  **B2B procurement connectivity for Vendure** (open source, community plugin) — **the most specialized open-source commerce middleware**, connecting headless B2B storefronts to procurement systems . **Features**: **Protocol translation** (OCI, cXML, IDS-Connect) via Punch Commerce gateway; **buyers punch out from SAP Ariba or Coupa**, browse the Vendure storefront, and transfer carts back as line items for approval; **parallel PunchOut sessions** with isolated carts per department; **flexible product mapping** for units, packaging, and weight; **dedicated Transferred status** for clean order lifecycle . **Tech stack**: Vendure (Node.js/TypeScript). **Deploy**: Self-hosted (Vendure + Punch Commerce gateway). **Trade-off**: **Vendure-specific**—not for Shopify or WooCommerce; requires Punch Commerce partnership for protocol translation . **Best for**: B2B merchants on Vendure needing SAP Ariba/Coupa procurement connectivity—a capability traditionally reserved for legacy suite commerce.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **n8n** — Fair-code workflow automation (Sustainable Use License). Can build custom commerce syncs via HTTP nodes and community nodes; no pre-built e-commerce middleware. **Note**: General automation engine, not a commerce-specific connector library. **Best for**: technical teams wanting to build custom order/inventory syncs with full control.
-
-- **Activepieces** — MIT-licensed no-code automation with 500+ integrations. **Note**: General automation; commerce connectors exist but are not the focus. **Best for**: teams wanting permissive licensing for internal commerce workflows.
-
-- **No mature open-source multi-channel e-commerce middleware exists.** Celigo, Patchworks, CartRover, and Boomi dominate; open-source alternatives are stack-specific (Odoo, Vendure) or general-purpose (n8n, Activepieces).
-
-
-
-**Frameworks for building custom systems**: **Odoo Shopify Connector** is the strongest open-source starting point for Shopify-to-ERP sync. **Vendure PunchOut** fills a niche B2B procurement gap. For multi-channel middleware, **n8n** or **Activepieces** can build custom flows but lack pre-built commerce connectors. **None of these match Celigo's NetSuite-native depth or Patchworks' retail operations.**
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- E-commerce integration platforms handling orders and customer data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls.
-
-- **The "managed iPaaS" vs. "order routing" vs. "stack-specific connector" vs. "general automation" distinction is critical.** **Celigo, Patchworks, Boomi, Workato, and Alloy** are **managed iPaaS**—they provide connector libraries, visual builders, and orchestration . **CartRover** is **order routing**—it specializes in Shopify-to-3PL/WMS flows . **Odoo Shopify Connector and Vendure PunchOut** are **stack-specific connectors**—they solve one integration deeply for one platform . **n8n and Activepieces** are **general automation**—they can build commerce flows but lack pre-built middleware. **Choose based on whether you need broad connector coverage, fulfillment-specific routing, a native ERP sync, or custom flexibility.**
-
-- **Celigo's free plan is testing-only**—2 endpoints and 1 flow, no SSO or API tokens. **Production requires a paid quote** .
-
-- **Patchworks counts operations per payload, not per item**—a single order with 50 line items counts as one operation. **Model your actual payload volume, not item count** .
-
-- **CartRover's per-cart charges add up.** Base $39/month covers one cart; each additional cart is **$15/month**, and each additional EDI source is **$99/month** . **Multi-channel retailers should model total cart count before committing** .
-
-- **Boomi's hidden costs are substantial.** Professional services run **20–40% of first-year spend**; renewal increases are typically **3–7% annually** unless negotiated upfront . **Negotiate overage terms, services caps, and renewal protections before signing.**
-
-- **Workato's free tier is generous but one-time.** **50,000 credits never expire**, but Pro credits expire monthly—**no rollover** .
-
-- **Odoo Shopify Connector is the most production-ready open-source option** for a specific stack, with webhooks, queue_job durability, and reconciliation . **The trade-off**: Odoo 19-specific; requires Shopify custom app setup.
-
-- Self-hosted open-source solutions require proper infrastructure (Odoo for the connector, Vendure for PunchOut, Docker for n8n), security hardening, and ongoing maintenance. **Commerce middleware handles order and customer data**—ensure your deployment meets your organization's security and compliance requirements before connecting production stores.
-
-
+# Awesome E-Commerce Integration Middleware 🛍️⚡
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome E-Commerce Integration Middleware Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-E-Commerce-Integration-Middleware/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-E-Commerce-Integration-Middleware?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-E-Commerce-Integration-Middleware/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-E-Commerce-Integration-Middleware?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-E-Commerce-Integration-Middleware/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-E-Commerce-Integration-Middleware" alt="GitHub issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-E-Commerce-Integration-Middleware/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-E-Commerce-Integration-Middleware" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🌟 Overview & Purpose
 
+> **A curated showcase of top SaaS enterprise iPaaS platforms and open-source middleware projects for seamless e-commerce integration, multi-channel order routing, real-time inventory synchronization, and custom commerce bridges.** 🚀
 
-**Made for e-commerce operations, integration engineers, and organizations building transparent commerce middleware solutions.**
+Whether you are scaling a fast-growing DTC storefront, managing an enterprise ERP migration (NetSuite, SAP, MS Dynamics), connecting a 3PL warehouse fulfillment network, or orchestrating B2B PunchOut procurement flows, this guide provides an unbiased, developer-first roadmap.
 
-Let's make E-Commerce Integration Middleware more open, data-driven, and order-reliable.
+**Last updated:** November 2026 📅
+
+---
+
+## 📑 Table of Contents
+
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Managed iPaaS Platforms](#-saas--managed-ipaas-platforms)
+- [🔓 Open-Source Middleware & Connector Projects](#-open-source-middleware--connector-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Key Architectural Distinctions & Disclaimer](#️-key-architectural-distinctions--disclaimer)
+- [📊 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global **Integration Platform as a Service (iPaaS)** and dedicated e-commerce middleware market is estimated at approximately **$15B to $19B in 2025–2026**, expanding rapidly at a **~20–24% CAGR** driven by headless commerce architectures, omnichannel marketplace synchronization, and automated fulfillment operations. 
+
+The sector is **moderately fragmented** rather than winner-take-all:
+- **Horizontal & Enterprise Giants** (such as HubSpot, Boomi, and Workato) dominate enterprise automation, cross-departmental orchestrations, and massive application suites.
+- **Vertical & Niche Specialists** (such as Celigo for NetSuite depth, Patchworks for DTC retail operations, and CartRover/Extensiv for WMS/3PL order routing) capture intense merchant loyalty by solving edge cases, custom data transformations, and supply chain protocols out of the box.
+- **Open-Source Bridges & Engines** (such as n8n, Activepieces, Airbyte, Apache Camel, and stack-specific connectors) empower technical teams to eliminate vendor lock-in, safeguard customer PII, and maintain full control over internal commerce pipelines.
+
+---
+
+## 🏢 SaaS & Managed iPaaS Platforms
+
+The table below outlines key commercial SaaS platforms, ranked in **descending order by company size** (market capitalization / valuation / annual recurring revenue).
+
+| 🏢 Platform | 💰 Company Size (Valuation / Revenue) | 🏷️ Specific Starting Pricing | 🎁 Free Tier / Free Trial Limits | 🎯 Best For & Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| [**HubSpot E-commerce Integration**](https://www.hubspot.com/) | **~$12.5B Market Cap** (~$3.1B+ ARR) | Free tier available; paid Starter starts at **$15/seat/month**, Professional Commerce features start at **$85–$95/user/month** (billed annually) + payment processing fees | **Free forever plan**: Up to 2 users, basic payment links, quotes, and standard CRM/e-commerce sync | **Best for**: HubSpot CRM merchants needing direct storefront order sync to customer records.<br>**Trade-off**: Not dedicated middleware; limited ERP/WMS connectivity. |
+| [**Workato**](https://www.workato.com/) | **$5.7B Valuation** (~$150M ARR) | Starts at **$75/month** (Base plan with 2,500 recurring credits/month, scaling to $1,275/mo for 50,000 credits; custom enterprise quotes for high volume) | **Free forever plan**: **50,000 one-time credits** (never expire) for testing workflows and building automations | **Best for**: Enterprise teams orchestrating complex workflows with enterprise apps.<br>**Trade-off**: Credit consumption spans tasks, API calls, and table rows; unused paid credits expire monthly (no rollover). |
+| [**Zapier**](https://zapier.com/) | **$5.0B Valuation** (~$310M+ ARR) | Free tier available; paid Starter tier starts at **$19.99/month** (billed annually at $239.88/yr for 750 tasks/mo; or $29.99 billed monthly) | **Free forever plan**: **100 tasks/month**, unlimited 2-step Zaps, and 15-minute polling updates | **Best for**: Small retailers wanting fast, simple order-to-app automations without code.<br>**Trade-off**: Multi-step logic, webhooks, and fast polling (1–2 min) require paid tiers. |
+| [**Boomi**](https://boomi.com/) | **$4.0B Valuation** (~$500M+ ARR) | Benchmark contracts typically start at **~$2,000–$3,750/month** (typical mid-market/enterprise entry is **~$45,000/year** based on deployed atoms and connector endpoints) | **Free trial only**: **30-day free trial** with full platform access across test atoms and connector libraries | **Best for**: Large enterprises requiring robust high-availability hybrid integration.<br>**Trade-off**: Quote-based contracts; add-on atoms and professional services add 20–40% to first-year TCO. |
+| [**Celigo**](https://www.celigo.com/) | **~$100M ARR** (Series C funded) | Benchmark starting entry begins at **~$500–$600/month** (billed annually, structured by connected application endpoints and active flows) | **Free forever plan**: **2 endpoints and 1 active flow** in production; also provides a **30-day free trial** with unlimited endpoints/flows and 3 sandbox environments | **Best for**: NetSuite-centric retailers needing pre-built Shopify, Amazon, and EDI synchronization.<br>**Trade-off**: Free forever plan is limited to 1 flow; production multi-flow sync requires enterprise quotes. |
+| [**Make (Celonis)**](https://www.make.com/) | **~$100M+ Subsidiary** (Celonis ~$11B valuation; ~$50M+ ARR) | Free tier available; paid Core tier starts at **$9/month** ($10.59 billed monthly) for 10,000 operations/month | **Free forever plan**: **1,000 operations/month**, 2 active scenarios, and 15-minute minimum execution intervals | **Best for**: Visual builders seeking complex branching logic at lower cost than Zapier.<br>**Trade-off**: Credit/operation exhaustion halts active sync scenarios until monthly reset. |
+| [**CartRover (Extensiv)**](https://www.cartrover.com/) | **~$18.5M ARR** (Private equity backed) | Merchant plan starts at **$39/month** (covers 1 cart/store connection + 1 WMS/3PL connection; $15/month per additional standard cart, $99/mo per EDI cart) | **Free trial only**: **30-day free trial** with unlimited order routing and warehouse sync testing (no credit card required) | **Best for**: Direct-to-consumer merchants routing order pipelines to 3PL warehouses.<br>**Trade-off**: Additional connector fees ($15/cart, $99/EDI) add up for multi-channel stores. |
+| [**Patchworks**](https://www.wearepatchworks.com/) | **~$10M–$11.7M ARR** (£5M+ growth funded) | Entry Growth tier starts at **~$500–$1,000/month** (typically contracted annually from **~$6,000–$12,000/year** based on 3 connectors and up to 150,000 monthly operations) | **Free trial only**: **14 to 30-day guided sandbox trial** with free installation and onboarding consultation | **Best for**: Fast-growing apparel and retail DTC brands with multi-channel ERP/WMS setups.<br>**Trade-off**: Operations counted per payload; custom quote required for high volume. |
+| [**Alloy Automation**](https://runalloy.com/) | **~$100M–$250M Valuation** (~$5M ARR) | Embedded iPaaS starts at **$120/month** (starter tier on software marketplaces; enterprise embedded tiers start at $500–$1,000+/mo) | **Free trial only**: **14-day free trial** with access to pre-built e-commerce workflow recipes and connectors | **Best for**: SaaS software vendors building native embedded e-commerce integrations.<br>**Trade-off**: Niche focus on embedded SaaS integrations rather than merchant-direct ops. |
+| [**VL OMNI**](https://vlomni.com/) | **~$5.1M ARR** (Private boutique iPaaS) | Managed enterprise integration packages start at **~$1,500–$2,500/month** (+ initial implementation/setup fees depending on custom data flow mapping) | **Free trial only**: Custom scoped proof-of-concept / demo sandbox (typically **14–30 days** on inquiry) | **Best for**: Mid-market merchants needing fully managed Shopify Plus to complex ERP (NetSuite, MS Dynamics, SAP) integration.<br>**Trade-off**: High-touch managed service with setup costs; no self-serve sign-up. |
+
+---
+
+## 🔓 Open-Source Middleware & Connector Projects
+
+Curated open-source repositories and connector frameworks for self-hosted commerce orchestration, ETL pipelines, and specialized ERP connectors. **Sorted in descending order by GitHub Stars:**
+
+| # | 📦 Repository & Project | ⭐ GitHub Stars | 📜 License | 🛠️ Focus Area & Tech Stack |
+| :-: | :--- | :--- | :--- | :--- |
+| 1 | [**n8n-io/n8n**](https://github.com/n8n-io/n8n) | [![Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) | Sustainable Use License (Fair-Code) | **Self-hosted workflow automation & iPaaS engine** (TypeScript/Node.js). Build custom event-driven order syncs, inventory webhooks, and multi-app commerce routing. |
+| 2 | [**activepieces/activepieces**](https://github.com/activepieces/activepieces) | [![Stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers) | MIT License | **Open-source no-code business automation** (TypeScript). Permissive alternative to Zapier with 500+ pieces including Shopify, WooCommerce, and Stripe. |
+| 3 | [**airbytehq/airbyte**](https://github.com/airbytehq/airbyte) | [![Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers) | ELv2 (Connectors MIT) | **Data integration & ETL/ELT platform** (Java/Python). Replicates bulk transactional data, catalog updates, and order analytics from Shopify, BigCommerce, and Stripe into data warehouses. |
+| 4 | [**automatisch/automatisch**](https://github.com/automatisch/automatisch) | [![Stars](https://img.shields.io/github/stars/automatisch/automatisch?style=social&color=white)](https://github.com/automatisch/automatisch/stargazers) | AGPL-3.0 | **Privacy-first self-hosted business automation** (JavaScript/React). Designed to keep sensitive customer data, orders, and payment records strictly on your own cloud/infrastructure. |
+| 5 | [**vendurehq/vendure**](https://github.com/vendurehq/vendure) | [![Stars](https://img.shields.io/github/stars/vendurehq/vendure?style=social&color=white)](https://github.com/vendurehq/vendure/stargazers) | MIT License | **Headless GraphQL e-commerce framework & plugin ecosystem** (TypeScript/NestJS). Features community middleware connectors like `@vendure-community/punchout-gateway-plugin` for enterprise B2B procurement (SAP Ariba, Coupa). |
+| 6 | [**apache/camel**](https://github.com/apache/camel) | [![Stars](https://img.shields.io/github/stars/apache/camel?style=social&color=white)](https://github.com/apache/camel/stargazers) | Apache-2.0 | **Enterprise Integration Patterns (EIP) middleware framework** (Java). The gold standard for building robust messaging routes, asynchronous queue consumers, and transformation pipelines across legacy ERPs and modern commerce APIs. |
+| 7 | [**OCA/connector**](https://github.com/OCA/connector) | [![Stars](https://img.shields.io/github/stars/OCA/connector?style=social&color=white)](https://github.com/OCA/connector/stargazers) | AGPL-3.0 | **The foundational connector framework for Odoo** (Python). Powers durable background synchronization jobs (`queue_job`), multi-backend channel mapping, and state-machine synchronization for external systems. |
+| 8 | [**OCA/connector-ecommerce**](https://github.com/OCA/connector-ecommerce) | [![Stars](https://img.shields.io/github/stars/OCA/connector-ecommerce?style=social&color=white)](https://github.com/OCA/connector-ecommerce/stargazers) | AGPL-3.0 | **Generic e-commerce base abstraction layer for Odoo** (Python). Provides standardized models for sales orders, payment methods, delivery carriers, and catalog reconciliation across storefront channels. |
+| 9 | [**OCA/connector-shopify**](https://github.com/OCA/connector-shopify) | [![Stars](https://img.shields.io/github/stars/OCA/connector-shopify?style=social&color=white)](https://github.com/OCA/connector-shopify/stargazers) | AGPL-3.0 | **Production-ready Shopify-to-Odoo connector** (Python/Odoo 19). Fully bi-directional sync for orders, products, inventory, customers, refunds, and fulfillment via GraphQL Admin API with signed webhooks and auto-reconciliation. |
+
+---
+
+### 🔍 Deep Dive into Open-Source Architecture
+
+- **Odoo Shopify Connector (OCA)**:
+  - **Strengths**: Signed webhooks for fast-path event ingestion, persistent job queues (`queue_job`) with exponential backoff retry, scheduled delta reconciliation to heal missed events, and configurable retention for log hygiene.
+  - **Deploy**: Self-hosted Odoo Community / Enterprise addon path.
+  - **Trade-off**: Requires dedicated Odoo infrastructure and custom Shopify App credentials; strictly coupled to Odoo backend.
+- **Vendure PunchOut Gateway**:
+  - **Strengths**: Translates enterprise B2B procurement protocols (cXML, OCI, IDS-Connect) via Punch Commerce gateway, allowing buyers to punch out from SAP Ariba or Coupa into Vendure and transfer back active carts for purchase requisition approval.
+  - **Deploy**: Node.js/TypeScript plugin within Vendure deployment.
+  - **Trade-off**: Vendure-specific; requires Punch Commerce gateway partnership for protocol translation.
+- **n8n & Activepieces (General Workflow Automation)**:
+  - **Strengths**: Extreme flexibility, visual flow designers, webhooks, and community node libraries.
+  - **Trade-off**: Not pre-configured commerce middleware—engineers must define data transformation schemas, debounce inventory race conditions, and manually handle ERP fulfillment states.
+
+---
+
+## 🤝 How to Contribute
+
+We welcome community contributions! To add a new platform or open-source connector:
+
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a feature branch** (`git checkout -b feat/add-new-middleware`).
+3. 📝 **Add your entry** to `README.md` following the existing format (include factual pricing or license, star count, and trade-offs).
+4. 🚀 **Submit a Pull Request** with a concise description of why the tool is relevant to commerce integration middleware.
+
+🌟 *Star the repository if you find it helpful!*
+
+---
+
+## ⚠️ Key Architectural Distinctions & Disclaimer
+
+- 📌 **Managed iPaaS vs. Order Routing vs. Connectors**:
+  - **Managed iPaaS** (*Celigo, Patchworks, Boomi, Workato, Alloy*): Multi-tenant platforms offering visual transformation builders, enterprise connector catalogs, and end-to-end orchestration.
+  - **Order Routing Middleware** (*CartRover / Extensiv*): Narrow, battle-tested solutions purpose-built for translating shopping cart sales orders directly into 3PL warehouse management systems (WMS).
+  - **Stack-Specific Connectors** (*Odoo Shopify Connector, Vendure PunchOut*): Deeply coupled integrations providing unmatched fidelity for specific ERP or commerce platforms.
+  - **General Workflow & ETL Engines** (*n8n, Activepieces, Airbyte, Apache Camel*): Highly capable open engines requiring custom schema mapping and integration plumbing.
+- 🔒 **Data Privacy & Compliance**: E-commerce middleware processes sensitive customer personally identifiable information (PII), payment tokens, and inventory financials. Self-hosted deployments must undergo security hardening, encryption-at-rest, and regular compliance reviews (GDPR, CCPA, PCI-DSS).
+
+---
+
+## 📊 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-E-Commerce-Integration-Middleware&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-E-Commerce-Integration-Middleware&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If this curated repository saved you hours of integration architecture research, vendor evaluation, or connector debugging, please consider supporting the project! 🙌
+
+- ⭐ **Star this repository** to help other engineers and founders discover it.
+- 🍴 **Fork & Share** with your integration engineering and operations teams.
+- ☕ **Buy me a coffee & Sponsor the maintainer** via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your sponsorship helps keep this directory continuously researched, benchmarked, and up to date! 🚀
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for integration architects, operations teams, and commerce developers worldwide.</b>
+</p>
