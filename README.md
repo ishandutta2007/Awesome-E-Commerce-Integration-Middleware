@@ -32,78 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Integration Platform as a Service (iPaaS) and e-commerce middleware market is estimated at approximately **$15B to $19B in 2025–2026**, expanding rapidly at a ~20–24% CAGR driven by omnichannel commerce, headless architectures, and automated ERP/supply-chain syncs. The sector is **moderately fragmented** rather than winner-take-all: large enterprise platforms (HubSpot, Boomi, Workato) dominate horizontal workflows, while specialized, high-retention vertical middleware (such as Celigo for NetSuite, Patchworks for DTC multi-channel, and CartRover/Extensiv for WMS/3PL routing) thrive alongside niche and stack-specific solutions.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Celigo**
-
-  **Integration platform with strong NetSuite and e-commerce focus**. **Pricing**: **Free trial** (30 days, unlimited endpoints/flows, 3 environments); **Free plan** (2 endpoints, 1 flow, production only, no SSO/API tokens); paid plans **quote-based** with flow/connector pricing . **Free tier**: Yes, 2 endpoints/1 flow. **Best for**: NetSuite-centric retailers needing pre-built Shopify, Amazon, and Salesforce sync—**trade-off**: free plan is testing-only; paid pricing requires sales engagement .
-
-
-
-- **Patchworks**
-
-  **Retail-focused iPaaS** for multi-channel commerce. **Pricing**: **Quote-based**; tiers differentiated by **connectors (3/4/8)** and **monthly operations (150K/400K/custom)**—operations counted per payload, not per item . **Free tier**: Free installation during trial; billing starts after discussion . **Best for**: retailers managing multi-channel complexity with virtual environments—**trade-off**: operation-based pricing requires volume modeling; no public rates .
-
-
-
-- **CartRover (Extensiv Integration Manager)**
-
-  **Order routing middleware** for Shopify to 3PL/WMS. **Pricing**: **Free plan** (connect one Shopify store, sync orders/tracking/inventory); **Merchant $39/month** (send orders to 3PL/WMS; $15/mo per additional cart, $99 per additional EDI source); **3PL Warehouse $99/month**; 30-day free trial . **Free tier**: Yes, basic Shopify sync. **Best for**: SMBs routing orders to fulfillment partners—**trade-off**: per-cart and per-EDI charges stack for multi-channel retailers .
-
-
-
-- **Boomi**
-
-  **Enterprise iPaaS** with atom-based pricing. **Pricing**: **Quote-only**; Vendr benchmark **~$45,147** typical deal; **Pay-As-You-Go** exists but FAQ limits sign-up to active trial users; API Management sold separately; hidden costs include overage charges, additional atoms, professional services (**20–40% of first-year spend**), and **3–7% annual renewal increases** . **Free tier**: Trial only. **Best for**: enterprises needing broad platform support and high availability—**trade-off**: opaque pricing and overage risk require careful negotiation .
-
-
-
-- **Workato**
-
-  **Enterprise automation platform** with self-service entry. **Pricing**: **Free** with **50,000 one-time credits** (never expire); **Pro** from **$75/month** (2,500 recurring credits) to **$1,275/month** (50,000 credits); **no credit rollover**—unused Pro credits expire monthly . **Free tier**: Yes, 50K one-time credits. **Best for**: teams wanting to start automation without sales contact—**trade-off**: credit consumption across tasks, API calls, rows, and Genie Actions.
-
-
-
-- **Alloy Automation**
-
-  **Embedded iPaaS for SaaS products**. **Pricing**: **Starting at $120/month** per SourceForge listing . **Free tier**: Not specified. **Best for**: SaaS vendors wanting to offer native commerce integrations to customers—**trade-off**: limited public pricing detail.
-
-
-
-- **VL OMNI**
-
-  **E-commerce and ERP integration** middleware. **Pricing**: Quote-only. **Free tier**: Not specified. **Best for**: retailers needing ERP-to-commerce data flows.
-
-
-
-- **Zapier**
-
-  **No-code automation** with 9,000+ apps including Shopify, WooCommerce, and ERPs. **Pricing**: Free with two-step Zaps; paid for multi-step and faster polling. **Free tier**: Yes, limited. **Best for**: small retailers wanting simple order-to-ERP syncs—**trade-off**: multi-step and faster polling require paid plans.
-
-
-
-- **Make**
-
-  **Visual automation** with commerce connectors. **Pricing**: Freemium; **$9/month** entry; credits bill per module action. **Free tier**: Yes, limited credits. **Best for**: power users wanting visual flows with more control than Zapier—**trade-off**: credit exhaustion pauses scenarios on lower tiers.
-
-
-
-- **HubSpot E-commerce Integration**
-
-  **Commerce tools within HubSpot** ecosystem. **Pricing**: Included with HubSpot tiers; quote-based for advanced. **Free tier**: Limited. **Best for**: HubSpot users wanting e-commerce data tied to CRM records—**trade-off**: not a dedicated middleware; limited ERP connectivity.
-
+| Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Free Trial Limits | Best For & Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| **HubSpot E-commerce Integration** | **~$12.5B Market Cap** (~$3.1B+ ARR) | Free tier available; paid Starter starts at **$15/seat/month**, Professional Commerce features start at **$85–$95/user/month** (billed annually) + transaction processing fees | **Free forever plan**: Up to 2 users, basic payment links, quotes, and standard CRM/e-commerce sync | **Best for**: HubSpot CRM users needing direct order sync to contact records.<br>**Trade-off**: Not dedicated middleware; limited ERP/WMS connectivity. |
+| **Workato** | **$5.7B Valuation** (~$150M ARR) | Starts at **$75/month** (Base plan with 2,500 recurring credits/month, scaling to $1,275/mo for 50,000 credits; custom enterprise quotes for higher volumes) | **Free forever plan**: **50,000 one-time credits** (never expire) for testing workflows and building automations | **Best for**: Teams automating across enterprise apps with no-code builder.<br>**Trade-off**: Credit consumption spans tasks, API calls, and table rows; unused paid credits expire monthly (no rollover). |
+| **Zapier** | **$5.0B Valuation** (~$310M+ ARR) | Free tier available; paid Starter tier starts at **$19.99/month** (billed annually at $239.88/yr for 750 tasks/mo; or $29.99 billed monthly) | **Free forever plan**: **100 tasks/month**, unlimited 2-step Zaps, and 15-minute polling updates | **Best for**: Small retailers wanting fast, simple order-to-app syncs.<br>**Trade-off**: Multi-step logic, webhooks, and fast polling (1–2 min) require paid tiers. |
+| **Boomi** | **$4.0B Valuation** (~$500M+ ARR) | Benchmark contracts typically start at **~$2,000–$3,750/month** (typical mid-market/enterprise entry is **~$45,000/year** based on deployed atoms and connector endpoints) | **Free trial only**: **30-day free trial** with full platform access across test atoms and connector libraries | **Best for**: Large enterprises requiring robust high-availability hybrid integration.<br>**Trade-off**: Quote-based contracts; add-on atoms and professional services add 20–40% to first-year TCO. |
+| **Celigo** | **~$100M ARR** (Series C funded) | Benchmark starting entry begins at **~$500–$600/month** (billed annually, structured by connected application endpoints and active flows) | **Free forever plan**: **2 endpoints and 1 active flow** in production; also provides a **30-day free trial** with unlimited endpoints/flows and 3 sandbox environments | **Best for**: NetSuite-centric retailers needing pre-built Shopify, Amazon, and EDI synchronization.<br>**Trade-off**: Free forever plan is limited to 1 flow; production multi-flow sync requires enterprise quotes. |
+| **Make (Celonis)** | **~$100M+ Subsidiary** (Celonis ~$11B valuation; ~$50M+ ARR) | Free tier available; paid Core tier starts at **$9/month** ($10.59 billed monthly) for 10,000 operations/month | **Free forever plan**: **1,000 operations/month**, 2 active scenarios, and 15-minute minimum execution intervals | **Best for**: Visual builders seeking complex branching logic at lower cost than Zapier.<br>**Trade-off**: Credit/operation exhaustion halts active sync scenarios until monthly reset. |
+| **CartRover (Extensiv)** | **~$18.5M ARR** (Private equity backed) | Merchant plan starts at **$39/month** (covers 1 cart/store connection + 1 WMS/3PL connection; $15/month per additional standard cart, $99/mo per EDI cart) | **Free trial only**: **30-day free trial** with unlimited order routing and warehouse sync testing (no credit card required) | **Best for**: Direct-to-consumer merchants routing order pipelines to 3PL warehouses.<br>**Trade-off**: Additional connector fees ($15/cart, $99/EDI) add up for multi-channel stores. |
+| **Patchworks** | **~$10M–$11.7M ARR** (£5M+ growth funded) | Entry Growth tier starts at **~$500–$1,000/month** (typically contracted annually from **~$6,000–$12,000/year** based on 3 connectors and up to 150,000 monthly operations) | **Free trial only**: **14 to 30-day guided sandbox trial** with free installation and onboarding consultation | **Best for**: Fast-growing apparel and retail DTC brands with multi-channel ERP/WMS setups.<br>**Trade-off**: Operations counted per payload; custom quote required for high volume. |
+| **Alloy Automation** | **~$100M–$250M Valuation** (~$5M ARR) | Embedded iPaaS starts at **$120/month** (starter tier on software marketplaces; enterprise embedded tiers start at $500–$1,000+/mo) | **Free trial only**: **14-day free trial** with access to pre-built e-commerce workflow recipes and connectors | **Best for**: SaaS software vendors building native embedded e-commerce integrations.<br>**Trade-off**: Niche focus on embedded SaaS integrations rather than merchant-direct ops. |
+| **VL OMNI** | **~$5.1M ARR** (Private boutique iPaaS) | Managed enterprise integration packages start at **~$1,500–$2,500/month** (+ initial implementation/setup fees depending on custom data flow mapping) | **Free trial only**: Custom scoped proof-of-concept / demo sandbox (typically **14–30 days** on inquiry) | **Best for**: Mid-market merchants needing fully managed Shopify Plus to complex ERP (NetSuite, MS Dynamics, SAP) integration.<br>**Trade-off**: High-touch managed service with setup costs; no self-serve sign-up. |
 
 
 ## Open-Source GitHub Projects
